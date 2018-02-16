@@ -1,9 +1,9 @@
-
 let inputPoke = document.getElementById('pokeInput');
 let buttonSearch = document.getElementById('searchButton');
 
 buttonSearch.addEventListener('click',function(){
 	$('.poke-info').empty();
+	$('.poke_img').empty();
 	fetch('https://pokeapi.co/api/v2/pokemon/'+ inputPoke.value + '/')
 	.then((response)=>{
 		console.log(response);
